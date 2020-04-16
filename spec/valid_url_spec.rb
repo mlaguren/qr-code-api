@@ -9,7 +9,7 @@ describe ValidUrl do
       end
     end
 
-    context "given an invalid www compliant url" do
+    context "given an non www compliant url" do
       it "returns true" do
         expect(ValidUrl.check("https://example.com")).to eq true
       end
