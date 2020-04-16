@@ -12,16 +12,6 @@ pipeline {
                     junit 'tests.xml'
                     }
                 }
-                success {
-                    publishHTML target: [
-                        allowMissing: false,
-                        alwaysLinkToLastBuild: false,
-                        keepAll: true,
-                        reportDir: 'coverage',
-                        reportFiles: 'index.html',
-                        reportName: 'Simple Coverage Report'
-                    ]
-                }
             }
         }
     }
